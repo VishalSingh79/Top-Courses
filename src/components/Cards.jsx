@@ -3,22 +3,28 @@ import React, { useState } from 'react'
 import Card from './Card'
 import { toast } from 'react-toastify';
 
+
 function Cards({courses,categoryc}) {
    let allcourses=[];
    const [likedCourses,setLikedCourses]=useState([])
+ 
+
    const getcourses=()=>{
+       
        if(categoryc==="ALL"){
         Object.values(courses).forEach((courseCategory)=>{
         courseCategory.forEach((course)=>{
         allcourses.push(course);
             })
           })
-       return allcourses;
+          
+         return allcourses;
         }
        else{
          let category=Object.keys(courses).filter((cid)=>cid===categoryc);
          let arr=courses[`${category}`];     
          Object.values(arr).forEach((ecourse)=> allcourses.push(ecourse));       
+         
          return allcourses;
        }
      
