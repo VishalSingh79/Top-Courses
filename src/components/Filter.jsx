@@ -1,3 +1,4 @@
+
 import React from 'react'
 import data from './data'
 function Filter({categoryc,setCategoryc}) {
@@ -20,3 +21,4 @@ function Filter({categoryc,setCategoryc}) {
 }
 
 export default Filter
+

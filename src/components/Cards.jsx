@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import Card from './Card'
 import { toast } from 'react-toastify';
@@ -56,3 +57,4 @@ function Cards({courses,categoryc}) {
 }
 
 export default Cards
+

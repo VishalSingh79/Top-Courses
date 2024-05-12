@@ -1,3 +1,4 @@
+
 import React  from 'react'
 import { useState } from 'react';
 import { FcLike } from "react-icons/fc";
@@ -35,3 +36,4 @@ function Card({ecourse,clickHandler,likedCourses}) {
 }
 
 export default Card
+

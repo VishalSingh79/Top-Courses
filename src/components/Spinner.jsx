@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 function Spinner() {
@@ -10,3 +11,4 @@ function Spinner() {
 }
 
 export default Spinner
+

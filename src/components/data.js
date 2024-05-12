@@ -1,3 +1,4 @@
+
 const  data = [
     {
       id: "1",
@@ -23,4 +24,5 @@ const  data = [
   ];
   export default data;
   export const apiUrl = "https://codehelp-apis.vercel.app/api/get-top-courses";
+
   
