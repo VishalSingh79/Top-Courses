@@ -20,6 +20,16 @@ function Cards({courses,categoryc}) {
           
          return allcourses;
         }
+       else if(categoryc==="Liked Courses"){
+         Object.values(courses).forEach((courseCategory)=>{
+          courseCategory.forEach((course)=>{
+            if(likedCourses.includes(course.id)){
+              allcourses.push(course);
+            }
+          })
+         })
+         return allcourses;
+       }
        else{
          let category=Object.keys(courses).filter((cid)=>cid===categoryc);
          let arr=courses[`${category}`];     
@@ -32,15 +42,18 @@ function Cards({courses,categoryc}) {
   function clickHandler(id)
   {
         if(likedCourses.includes(id))
-          {
+          {   
               let newLikedCourses=likedCourses.filter((keys)=> keys!==id)
               //course remove ho gya
               setLikedCourses(newLikedCourses); 
-              toast.warning("Like Removed");
+              toast.warning("Like Removed",{
+                className:'toast-duration',
+              });
           }
           else{
             if(likedCourses.length===0) {
             setLikedCourses([id]);
+            
             }
             else{
              setLikedCourses((prev)=>[...prev,id]);
