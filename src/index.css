@@ -1,0 +1,131 @@
+:root{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center; 
+  color:white;
+  background-color: #242424;
+  overflow-x: hidden;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width:100%;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+.landing-page{
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color:white;
+}
+button:hover {
+  border-color: #646cff;
+  color:#646cff;
+}
+.btn1{
+  border-color: #646cff;
+  color:#646cff;
+}
+
+.landing-header{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.card-details{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.all-cards{
+  width:800px;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:2.2rem;
+  margin: 0 auto;
+}
+.filter-data{
+    width:100%;
+    margin-bottom: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  
+}
+.like{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:125px;
+  left:192px;
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  background-color: white;
+}
+.like:hover{
+  cursor:pointer;
+}
+.card{
+  overflow: hidden;
+  position: relative;
+  width:230px;
+  height:275px;
+  border:2px solid rgba(0, 0, 0, 0.356);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.356);
+  display:flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.data{
+  padding:0.2rem 0.4rem;
+}
+.landing-mark{
+   width:max-content;
+   height: max-content;
+}
+.title{
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #646cff;
+}
+.spinner-div{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
