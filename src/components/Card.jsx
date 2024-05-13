@@ -8,9 +8,9 @@ import { FcLikePlaceholder } from "react-icons/fc";
 function Card({ecourse,clickHandler,likedCourses}) {
     const desc=`${ecourse.description.substring(0,100)}...`;
     let id=ecourse?.id;
-    
-  
-  return (
+
+ 
+  return ( 
     <div className='card'>
           <img src={ecourse?.image?.url}
             alt={ecourse?.image?.alt}
@@ -33,7 +33,8 @@ function Card({ecourse,clickHandler,likedCourses}) {
 
     </div>
   )
-}
+  }
+
 
 export default Card
 

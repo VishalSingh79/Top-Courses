@@ -129,3 +129,11 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+.card-desc{
+  width:800px;
+  height:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}

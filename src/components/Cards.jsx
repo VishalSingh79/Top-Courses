@@ -47,7 +47,7 @@ function Cards({courses,categoryc}) {
               //course remove ho gya
               setLikedCourses(newLikedCourses); 
               toast.warning("Like Removed",{
-                className:'toast-duration',
+                autoClose:800
               });
           }
           else{
@@ -59,20 +59,30 @@ function Cards({courses,categoryc}) {
              setLikedCourses((prev)=>[...prev,id]);
              //course add ho gya hai
             }
-             toast.success("Liked Successfully");
+             toast.success("Liked Successfully",{
+              autoClose:800
+             });
           }
   }
-   
-    
+  getcourses();
+  if(allcourses.length===0){
+    return (
+      <div className='card-desc'>
+        <div >No Liked Courses !!</div>
+      </div>
+    )
+  }
+  else{
   return (
     <div className='all-cards'>
-        {
-               getcourses().map((ecourse)=>{
+        {      
+               allcourses.map((ecourse)=>{
                return (<Card key={ecourse?.id}  ecourse={ecourse} likedCourses={likedCourses} clickHandler={clickHandler}/>)
           })
         }
     </div>
   )
+}
 }
 
 export default Cards
